@@ -1,0 +1,61 @@
+@import url("./base.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo {
+    font-weight: bold;
+    color: black;
+    font-size: 1.8rem;
+    
+}
+#logo-p{
+    color: orangered;
+    transition: color 10s ease;
+
+}
+nav {
+    background-color: white;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; 
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+}
+.click {
+    background-color: orangered;
+    border: none;
+    /* 1rem == 16px */
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    color: white;  
+    
+}
+.click:hover {
+    transform: translateY(-5px);
+}
+
+#NavLinks {
+    display: flex;
+    
+    list-style: none;
+    gap: 2rem;
+
+
+}
+#NavLinks li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.2rem;
+}
+#NavLinks li a:hover {
+    color: orangered;
+}
+    
+
+

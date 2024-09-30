@@ -1,0 +1,111 @@
+/* Base styles similar to Tailwind Preflight (reset) */
+
+/* Remove all the default margin and padding */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a consistent base line-height and font-size across all browsers */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in mobile */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Block elements */
+body {
+  margin: 0;
+  line-height: inherit;
+  font-family: inherit;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Ensure borders and outlines are consistent */
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/* Make images responsive */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove built-in form field styling */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* Remove default appearance of buttons */
+button {
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ensure input elements are legible */
+input,
+textarea {
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+/* Disable button focus outlines */
+button:focus {
+  outline: none;
+}
+
+/* Remove default list styles */
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset anchor tag */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Make tables collapsible */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Remove text-indent for form elements */
+textarea {
+  resize: vertical;
+}
+
+/* Ensure consistent focus styles across browsers */
+*:focus {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
