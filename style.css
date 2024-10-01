@@ -166,6 +166,7 @@ section {
 footer {
     background-image: url(./sunset_horizon_5k_2-3840x2160.jpg);
     padding: 2.5rem 0;
+    object-fit: cover;
 }
 
 
