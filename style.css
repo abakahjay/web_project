@@ -5,6 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    background-color: white;
+}
 #logo {
     font-weight: bold;
     color: black;
@@ -16,6 +27,7 @@
     transition: color 10s ease;
 
 }
+/* Nav bar styling */
 nav {
     background-color: white;
     display: flex; 
@@ -25,6 +37,7 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
 
 }
+/* nav bar button styling */
 .click {
     background-color: orangered;
     border: none;
@@ -35,17 +48,16 @@ nav {
     color: white;  
     
 }
+/* hover effects for the nav bar button */
 .click:hover {
     transform: translateY(-5px);
+    background-color: tomato;
 }
-
+/* Align the Links Horizontally and Remove any styles */
 #NavLinks {
-    display: flex;
-    
+    display: flex;    
     list-style: none;
     gap: 2rem;
-
-
 }
 #NavLinks li a {
     text-decoration: none;
@@ -53,9 +65,134 @@ nav {
     color: #333;
     font-size: 1.2rem;
 }
+/* hover efects */
 #NavLinks li a:hover {
     color: orangered;
 }
+
+
+
+/* Hero Section Styling */
+.Hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* video-background styling */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures video stays behind content */
+    overflow: hidden;
+}
+/* video parameters */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Hero Content Styling */
+.hero-content {
+    z-index: 1;
+    text-align: center;
+    color: white; /* Change text color of content in hero section as needed */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem; /* Adjust size as needed */
+    /* font-style: italic; */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 2rem;
+}
+section {
+    text-align: center;
+    padding: 4rem 0;
     
+}
+/* Styling for the other sections */
+.linksections {
+    background-color: rgba(160, 201, 245, 0.226);
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 2rem;
+    border-style: outset;
+    background: linear-gradient(skyblue,lightgreen);
+    
+}
+/* linksections hover effects */
+.linksections h1:hover {
+    color: orangered;
+    transform: translateY(-3px);
+    cursor: pointer;
+    
+}
+/* General hero-buttons styling  */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+/* Each .hero-btn styling */
+.hero-btn {
+    background-color: orangered;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    border: none;
+}
+/* .hero-btn hover effects */
+.hero-btn:hover {
+    transform: translateY(-4px);
+    background-color: tomato;
+}
+footer {
+    background-image: url(./sunset_horizon_5k_2-3840x2160.jpg);
+    padding: 2.5rem 0;
+}
 
 
+/* For a Phone or Laptop */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack the logo, links, and button vertically */
+        text-align: center;
+    }
+
+    #NavLinks {
+        flex-direction: column;
+        gap: 1rem; /* Adjust gap for vertical layout */
+    }
+
+    .button-container {
+        margin-top: 1rem; /* Add space above the button */
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .hero-btn {
+        padding: 0.75rem 1.5rem;
+    }
+}
