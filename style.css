@@ -5,9 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.ready_player_one_4k_8k-7680x4320.jpg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
 
 html {
     scroll-behavior: smooth;
+    transition: scroll-behavior 2s ease-in-out;
     
 }
 
@@ -165,9 +172,13 @@ section {
     background-color: tomato;
 }
 footer {
-    background-image: url(./sunset_horizon_5k_2-3840x2160.jpg);
+    background-image: url("./sunset_horizon_5k_2-3840x2160.jpg");
     padding: 2.5rem 0;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
 }
 
 
